@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(255, 251, 0);
+    color: rgb(0, 0, 0);
+}
+
+input{
+    width: 60px;
+    background-color: rgb(255, 251, 0);
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.formstyle{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+#limpar{
+    width: 95%;
+    padding: 20px;
+}
+
+#display{
+    width: 95%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+input:hover{
+    background-color: rgb(254, 255, 190);
+}
