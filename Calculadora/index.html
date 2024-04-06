@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./calculadora.css">
+    <script src="./calculo.js"></script>
     <title>Calculadora</title>
 </head>
 <body>
@@ -11,27 +12,27 @@
     <div class="formstyle" id="calculator">
         <input id="display" type="text">
         <br><br>
-        <input type="button" value="1">
-        <input type="button" value="2">
-        <input type="button" value="3">
-        <input type="button" value="+">
+        <input type="button" value="1" onclick="addToDisplay('1')">
+        <input type="button" value="2" onclick="addToDisplay('2')">
+        <input type="button" value="3" onclick="addToDisplay('3')">
+        <input type="button" value="+" onclick="addToDisplay('+')">
         <br><br>
-        <input type="button" value="4">
-        <input type="button" value="5">
-        <input type="button" value="6">
-        <input type="button" value="-">
+        <input type="button" value="4" onclick="addToDisplay('4')">
+        <input type="button" value="5" onclick="addToDisplay('5')">
+        <input type="button" value="6" onclick="addToDisplay('6')">
+        <input type="button" value="-" onclick="addToDisplay('-')">
         <br><br>
-        <input type="button" value="7">
-        <input type="button" value="8">
-        <input type="button" value="9">
-        <input type="button" value="*">
+        <input type="button" value="7" onclick="addToDisplay('7')">
+        <input type="button" value="8" onclick="addToDisplay('8')">
+        <input type="button" value="9" onclick="addToDisplay('9')">
+        <input type="button" value="*" onclick="addToDisplay('*')">
         <br><br>
-        <input type="button" value="/">
-        <input type="button" value="0">
-        <input type="button" value=".">
-        <input type="button" value="=" id="igual">
+        <input type="button" value="/" onclick="addToDisplay('/')">
+        <input type="button" value="0" onclick="addToDisplay('0')">
+        <input type="button" value="." onclick="addToDisplay('.')">
+        <input type="button" value="=" id="igual" onclick="calculate()">
         <br><br>
-        <input type="button" value="C" id="limpar">
+        <input type="button" value="C" id="limpar" onclick="clearDisplay()">
     </div>
 </body>
 </html>
