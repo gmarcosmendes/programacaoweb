@@ -26,5 +26,5 @@ header{
     padding: 5px;
     margin: 5px;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
