@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cinema</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cinema</h1>
+        <h2>dos alunos Gabriel Mendes e Josias Piratarias</h2>
+    </header>
+    <h2 id="selecao">Selecione seu aperitivo</h2>
+    <main>
+        <div class="fileira">
+            <div class="movie-card">
+                <h3>Pipoca</h3>
+                <img src="img/pipoca.jpeg"
+                    alt=""><br>
+                <button class="button" onclick="openModal()"> Selecionar </button>
+            </div>
+            <div class="movie-card">
+                <h3>Refrigerante</h3>
+                <img src="img/coca-cola.jpeg"
+                    alt=""><br>
+                <button class="button" onclick="openModal1()"> Selecionar </button>
+            </div>
+            <div class="movie-card">
+                <h3>M&M</h3>
+                <img src="img/m&m.jpeg" alt=""><br>
+                <button class="button" onclick="openModal2()"> Selecionar </button>
+            </div>
+            <div class="movie-card">
+                <h3>Balas</h3>
+                <img src="img/bala.jpeg" alt=""><br>
+                <button class="button" onclick="openModal3()"> Selecionar </button>
+            </div>
+        </div>
+        <h2 id="selecao">COMBOS</h2>
+        <div class="fileira">
+            <div class="movie-card">
+                <h3>Pipoca + Refrigerante</h3>
+                <img src="img/combo-pipoca-refri.jpeg"
+                    alt=""><br>
+                <button class="button" onclick="openModal()"> Selecionar </button>
+            </div>
+            <div class="movie-card">
+                <h3>Pipoca + M&M</h3>
+                <img src="img/combo-pipoca-m&m.jpeg"
+                    alt=""><br>
+                <button class="button" onclick="openModal1()"> Selecionar </button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
