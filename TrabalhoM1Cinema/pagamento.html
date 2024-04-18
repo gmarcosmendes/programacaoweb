@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./stylePopUp.css">
+    <link rel="stylesheet" href="./stylePagamento.css">
     <title>Cinema</title>
 </head>
 
@@ -13,19 +15,85 @@
         <h1>Cinema</h1>
         <h2>dos alunos Gabriel Mendes e Josias Piratarias</h2>
     </header>
-    <h2 id="selecao">Selecione o meio de pagamento</h2>
     <main>
-
+        <div class="modal-container4">
+            <div class="modal">
+                <h2>Cartão de Crédito</h2>
+                <div class="final-dados">
+                    <div class="form">
+                        <label class="form-label">Número do cartão</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput"
+                            placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="form">
+                        <label class="form-label">Nome do titular</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="JOAO MARIA">
+                    </div>
+                </div>
+                <div class="final-dados">
+                    <div class="form">
+                        <label class="form-label">Validade</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="00/00/0000">
+                    </div>
+                    <div class="form">
+                        <label class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="000">
+                    </div>
+                </div>
+                <div>
+                    <img src="img/cartao-de-credito-daddos.png" alt="">
+                </div>
+                <div class="btns">
+                    <button class="btnOK" onclick="closeModal4()"> Comprar</button>
+                    <button class="btnClose" onclick="closeModal4()"> Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-container5">
+            <div class="modal">
+                <h2>PIX</h2>
+                <div>
+                    <img src="img/QR-Code.png" alt="">
+                </div>
+                <P>00020101021126330014br.gov.bcb.pix01110977964892552040000530398654040.015802BR5918CINEMA-PIRATARIA-ABERTA6006ITAJAI62070503***630460F8</P>
+                <div class="btns">
+                    <button class="btnOK" onclick="closeModal5()"> Confirmar</button>
+                    <button class="btnClose" onclick="closeModal5()"> Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-container6">
+            <div class="modal">
+                <h2>BOLETO</h2>
+                <div>
+                    <img src="img/boleto-popUp.jpeg" alt="">
+                </div>
+                <P>40390.00007 42095.765006
+                    80426.199016 1 96780000041000</P>
+                <div class="btns">
+                    <button class="btnOK" onclick="closeModal6()"> Confirmar</button>
+                    <button class="btnClose" onclick="closeModal6()"> Cancelar</button>
+                </div>
+            </div>
+        </div>
         <div class="valor">
             <h1>VALOR TOTAL DA COMPRA </h1>
-            <h2>TESTE VALOR ARIAEVL 123,45</h2>
+            <h2>TESTE VALOR VARIAVEL 123,45</h2>
         </div>
-        <div class="forma-pagamento">
-            <img src="img/cartao-pagamento.png" alt="">
+        <div class="pagamentos">
+            <div class="forma-pagamento">
+                <img id="img-pagamento" src="img/cartao-pagamento.png" onclick="openModal4()" alt="">
+            </div>
+            <div class="forma-pagamento">
+                <img id="img-pagamento" src="img/logo-pix-520x520.png" onclick="openModal5()" alt="">
+            </div>
+            <div class="forma-pagamento">
+                <img id="img-pagamento" src="img/boleto.png" onclick="openModal6()" alt="">
+            </div>
         </div>
-
     </main>
     <script src="script.js"></script>
+    <script src="scriptPopUp.js"></script>
 </body>
 
 </html>
