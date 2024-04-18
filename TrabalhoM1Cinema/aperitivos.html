@@ -11,51 +11,74 @@
 <body>
     <header>
         <h1>Cinema</h1>
-        <h2>dos alunos Gabriel Mendes e Josias Piratarias</h2>
+        <h2>dos alunos Gabriel Mendes e Josias Pereira</h2>
     </header>
     <h2 id="selecao">Selecione seu aperitivo</h2>
     <main>
         <div class="fileira">
             <div class="movie-card">
                 <h3>Pipoca</h3>
-                <img src="img/pipoca.jpeg"
-                    alt=""><br>
-                <button class="button" onclick="openModal()"> Selecionar </button>
+                <p>Valor: R$10,00</p>
+                <img src="img/pipoca.png"
+                alt=""><br>
+                <button class="decrement" onclick="decrementCounter(0)"> - </button>
+                <div class="contador">0</div>
+                <button class="increment" onclick="incrementCounter(0)"> + </button>
+                
             </div>
             <div class="movie-card">
                 <h3>Refrigerante</h3>
-                <img src="img/coca-cola.jpeg"
+                <p>Valor: R$5,00</p>
+                <img src="img/refrigerante.png"
                     alt=""><br>
-                <button class="button" onclick="openModal1()"> Selecionar </button>
+                    <button class="decrement" onclick="decrementCounter(1)"> - </button>
+                    <div class="contador">0</div>
+                    <button class="increment" onclick="incrementCounter(1)"> + </button>
             </div>
             <div class="movie-card">
-                <h3>M&M</h3>
-                <img src="img/m&m.jpeg" alt=""><br>
-                <button class="button" onclick="openModal2()"> Selecionar </button>
+                <h3>Chocolate</h3>
+                <p>Valor: R$4,00</p>
+                <img src="img/chocolate.png" alt=""><br>
+                <button class="decrement" onclick="decrementCounter(2)"> - </button>
+                <div class="contador">0</div>
+                <button class="increment" onclick="incrementCounter(2)"> + </button>
             </div>
             <div class="movie-card">
                 <h3>Balas</h3>
-                <img src="img/bala.jpeg" alt=""><br>
-                <button class="button" onclick="openModal3()"> Selecionar </button>
+                <p>Valor: R$3,00</p>
+                <img src="img/doces.png" alt=""><br>
+                <button class="decrement" onclick="decrementCounter(3)"> - </button>
+                <div class="contador">0</div>
+                <button class="increment" onclick="incrementCounter(3)"> + </button>
             </div>
         </div>
         <h2 id="selecao">COMBOS</h2>
         <div class="fileira">
             <div class="movie-card">
                 <h3>Pipoca + Refrigerante</h3>
-                <img src="img/combo-pipoca-refri.jpeg"
+                <p>Valor: R$13,00</p>
+                <img src="img/pipocaRefri.png"
                     alt=""><br>
-                <button class="button" onclick="openModal()"> Selecionar </button>
+                    <button class="decrement" onclick="decrementCounter(4)"> - </button>
+                    <div class="contador">0</div>
+                    <button class="increment" onclick="incrementCounter(4)"> + </button>
             </div>
             <div class="movie-card">
                 <h3>Pipoca + M&M</h3>
+                <p>Valor: R$15,00</p>
                 <img src="img/combo-pipoca-m&m.jpeg"
                     alt=""><br>
-                <button class="button" onclick="openModal1()"> Selecionar </button>
+                    <button class="decrement" onclick="decrementCounter(5)"> - </button>
+                    <div class="contador">0</div>
+                    <button class="increment" onclick="incrementCounter(5)"> + </button>
             </div>
         </div>
+        <div class="fileira" id="pular">
+            <p id="totalAperitivo">Total dos aperitivos:</p>
+            <button class="button">Continuar</button>
+        </div>
     </main>
-    <script src="script.js"></script>
+    <script src="./scripts/aperitivos.js"></script>
 </body>
 
 </html>

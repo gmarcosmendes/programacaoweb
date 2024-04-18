@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>Cinema</h1>
-        <h2>dos alunos Gabriel Mendes e Josias Piratarias</h2>
+        <h2>dos alunos Gabriel Mendes e Josias Pereira</h2>
     </header>
     <h2 id="selecao">Selecione o filme para assistir</h2>
     <main>
@@ -22,7 +22,7 @@
                 <img id="img-popUp" src="https://resizing.flixster.com/31MUPYoGBwNKA4Xc2O8X5xjfcvM=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2Y1YzhmOGNiLTEyZWEtNDgzYy05YjU0LWY4OWVhMWI5ZWM1Ni5qcGc="
                     alt=""><br>
                 <div class="btns">
-                    <button class="btnOK" onclick="closeModal()"> Confirmar</button>
+                    <button class="btnOK" onclick="confirmAndRedirect()"> Confirmar</button>
                     <button class="btnClose" onclick="closeModal()"> Cancelar</button>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 <img id="img-popUp" src="https://moviecom.com.br/site/wp-content/uploads/2023/12/BR_GXK_VERT_Tsr_2764x4096_INTL-260x385.jpg"
                     alt=""><br>
                 <div class="btns">
-                    <button class="btnOK" onclick="closeModal1()"> Confirmar</button>
+                    <button class="btnOK" onclick="confirmAndRedirect1()"> Confirmar</button>
                     <button class="btnClose" onclick="closeModal1()"> Cancelar</button>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 <img id="img-popUp" src="https://br.web.img3.acsta.net/pictures/23/12/13/18/13/4592801.jpg"
                     alt=""><br>
                 <div class="btns">
-                    <button class="btnOK" onclick="closeModal2()"> Confirmar</button>
+                    <button class="btnOK" onclick="confirmAndRedirect2()"> Confirmar</button>
                     <button class="btnClose" onclick="closeModal2()"> Cancelar</button>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                 <img id="img-popUp" src="https://cultura.uol.com.br/upload/redactor/20240307130339_umgatodesorteposter.jpg"
                     alt=""><br>
                 <div class="btns">
-                    <button class="btnOK" onclick="closeModal3()"> Confirmar</button>
+                    <button class="btnOK" onclick="confirmAndRedirect3()"> Confirmar</button>
                     <button class="btnClose" onclick="closeModal3()"> Cancelar</button>
                 </div>
             </div>
@@ -88,7 +88,8 @@
             </div>
         </div>
     </main>
-    <script src="script.js"></script>
+    <script src="./scripts/popUp.js"></script>
+    <script src="./scripts/filmes.js"></script>
 </body>
 
 </html>

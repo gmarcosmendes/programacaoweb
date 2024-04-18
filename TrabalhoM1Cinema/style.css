@@ -61,6 +61,91 @@ button{
     position: relative;
 }
 
+.modal-container{
+    margin-top: 30px;
+    margin-left: 25%;
+    width:50%;
+    position: fixed;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+}
+
+.modal-container1{
+    margin-top: 30px;
+    margin-left: 25%;
+    width:50%;
+    position: fixed;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+}
+
+.modal-container2{
+    margin-top: 30px;
+    margin-left: 25%;
+    width:50%;
+    position: fixed;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+}
+
+.modal-container3{
+    margin-top: 30px;
+    margin-left: 25%;
+    width:50%;
+    position: fixed;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#img-popUp{
+    max-width: 200px;
+    margin: auto;
+}
+
+.text-PopUp{
+    padding: 15px;
+}
+
+.active{
+    display: flex;
+}
+
+.active .modal{
+    animation: modal .4s;
+}
+
+@keyframes modal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+span {
+    margin: 10px auto;
+}
+
+.btns button{
+    font-size: medium;
+    padding: 10px;
+    cursor: pointer;
+}
 .cinema{
     margin: 150px;
     margin-top: 20px;
@@ -96,3 +181,83 @@ button{
    filter:invert(10%);
 }
 
+#pular{
+    float: right;
+    margin-right: 1%;
+}
+
+.sala {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cadeira {
+    flex: 1;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 255, 65);
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cadeira:hover {
+    background-color: rgb(150, 220, 50);
+    cursor: pointer;
+}
+
+#tela{
+    margin-top: 10px;
+    font-weight: bold;
+    border: solid 2px;
+    border-radius: 3px;
+    width: 500px;
+    padding: 10px;
+    background-color: #e9e9e9;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadeira.selecionado{
+    background-color: red;
+}
+
+/* Adicione este estilo para ajustar o alinhamento vertical dos símbolos nos botões */
+.decrement,
+.increment {
+    display: inline-flex; /* Altera a exibição para flex para centralizar o conteúdo verticalmente */
+    align-items: center; /* Centraliza verticalmente o conteúdo dentro do botão */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro do botão */
+    width: 30px; /* Defina a largura dos botões conforme necessário */
+    height: 30px; /* Defina a altura dos botões conforme necessário */
+    background-color: #0251fc; /* Cor de fundo conforme a classe button */
+    color: white; /* Cor do texto conforme a classe button */
+    border: solid 1px black;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    margin-right: 5px; /* Adiciona um espaçamento entre os botões */
+}
+
+.decrement:hover,
+.increment:hover {
+    background-color: #023e8a; /* Cor de fundo ao passar o mouse conforme a classe button */
+}
+
+.contador {
+    display: inline-block;
+    width: 30px; /* Defina a largura do contador conforme necessário */
+    text-align: center; /* Centralizar o texto no contador */
+}
+
+#totalAperitivo{
+    margin-right: 10px;
+}
+
+#totalAssentos{
+    margin-right: 10px;
+}
