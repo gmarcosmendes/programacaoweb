@@ -73,7 +73,9 @@
     flex-direction: column;
     background-color: lightblue;
     border-radius: 10px;
+    border: solid rgb(25, 47, 250);
     width: 100%;
+    box-shadow: 10px 10px 100px 10px rgb(40, 62, 255) inset;
 }
 
 #img-popUp{

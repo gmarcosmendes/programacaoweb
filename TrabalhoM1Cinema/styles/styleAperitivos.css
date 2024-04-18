@@ -1,6 +1,6 @@
 #pular{
-    float: right;
-    margin-right: 1%;
+    justify-content: center;
+    padding: 15px;
 }
 
 /* Adicione este estilo para ajustar o alinhamento vertical dos símbolos nos botões */

@@ -1,23 +1,35 @@
 body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"Orbitron", sans-serif;
+    background-color: rgb(247, 248, 255);
 }
 
 header{
     text-align: center;
     padding: 10px;
-    background-color: lightblue;
+    background: rgb(29,29,168);
+    background: linear-gradient(180deg, #4040ba 0%, rgba(173,216,230,1) 100%);
+    box-shadow: 1px 10px 8px lightblue;
+
 }
 
+#titleHeader{
+    font-family:"Orbitron", sans-serif;
+    font-weight: 800;
+    text-shadow: 4px 2px 8px rgb(56, 56, 56);
+}
+
+
 #selecao{
+    font-family:"Orbitron", sans-serif;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-shadow: 4px 2px 8px rgb(56, 56, 56);
 }
 
 main{
     text-align: center;
-    /*display: flex;*/
     flex-direction: row;
     justify-content: center;
 }
@@ -33,6 +45,7 @@ main{
     border: solid black 3px;
     border-radius: 3px;
     width: calc(80% - 30px);
+    box-shadow: 10px 10px 20px 10px lightblue inset;
 }
 
 img{
@@ -62,12 +75,14 @@ button{
 }
 
 footer{
+    font-family:"Orbitron", sans-serif;
     display: inline-block;
     width: 100%;
     justify-content: center;
-    background-color: lightblue;
     text-align: center;
     padding: 10px;
-    padding-top: 25px;
-    margin-top: 40px;
+    padding-top: 15px;
+    margin-top: 100px;
+    background: rgb(173,216,230);
+    background: linear-gradient(180deg, rgba(173,216,230,1) 0%, #4040ba 100%);
 }

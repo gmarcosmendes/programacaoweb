@@ -10,7 +10,7 @@
 }
 
 .pagamentos{
-    margin-top: 70px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
 }
@@ -40,4 +40,9 @@
     width: 100%;
     align-items: center;
     margin-left: 13%;
+}
+
+#valorTotal{
+font-size: 50px;
+
 }

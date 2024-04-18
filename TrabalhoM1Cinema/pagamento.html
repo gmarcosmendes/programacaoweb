@@ -7,13 +7,18 @@
     <link rel="stylesheet" href="./styles/styleGlobal.css">
     <link rel="stylesheet" href="./styles/stylePopUp.css">
     <link rel="stylesheet" href="./styles/stylePagamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&family=Orbitron:wght@400..900&family=Raleway:wght@100;400;600&display=swap"
+        rel="stylesheet">
     <title>Cinema</title>
 </head>
 
 <body>
     <header>
-        <h1>Cinema</h1>
-        <h2>dos alunos Gabriel Mendes e Josias Pereira</h2>
+        <h1 id="titleHeader">Cinema</h1>
+        <h2 id="titleHeader">dos alunos Gabriel Mendes e Josias Pereira</h2>
     </header>
     <main>
         <div class="modal-container4">
@@ -80,15 +85,20 @@
             <h1>VALOR TOTAL DA COMPRA </h1>
             <h2 id="valorTotal">Carregando...</h2>
         </div>
+        <br>
+        <h2>SELECIONE O MEIO DE PAGAMENTO</h2>
         <div class="pagamentos">
             <div class="forma-pagamento">
                 <img id="img-pagamento" src="img/pagamento.png" onclick="openModal4()" alt="">
+                <h2>CARTAO</h2>
             </div>
             <div class="forma-pagamento">
                 <img id="img-pagamento" src="img/pix.png" onclick="openModal5()" alt="">
+                <h2>PIX</h2>
             </div>
             <div class="forma-pagamento">
                 <img id="img-pagamento" src="img/boleto.png" onclick="openModal6()" alt="">
+                <h2>BOLETO</h2>
             </div>
         </div>
     </main>

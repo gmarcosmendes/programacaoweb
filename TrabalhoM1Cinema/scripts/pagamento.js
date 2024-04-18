@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Recupera o valor total dos assentos do armazenamento local
-    const totalAssentos = parseFloat(localStorage.getItem('totalAssentos')) || 0;
-    // Recupera o valor total dos aperitivos do armazenamento local
-    const totalAperitivos = parseFloat(localStorage.getItem('totalAperitivos')) || 0;
-    // Calcula o valor total da compra somando os valores dos assentos e aperitivos
-    const valorTotal = totalAssentos + totalAperitivos;
-    // Exibe o valor total da compra na página
-    document.getElementById('valorTotal').textContent = 'R$ ' + valorTotal.toFixed(2);
+  // Recupera o valor total dos assentos do armazenamento local
+  const totalAssentos = parseFloat(localStorage.getItem('totalAssentos')) || 0;
+  // Recupera o valor total dos aperitivos do armazenamento local
+  const totalAperitivos = parseFloat(localStorage.getItem('totalAperitivos')) || 0;
+  // Calcula o valor total da compra somando os valores dos assentos e aperitivos
+  const valorTotal = totalAssentos + totalAperitivos;
+  // Exibe o valor total da compra na página
+  document.getElementById('valorTotal').textContent = 'R$ ' + valorTotal.toFixed(2);
 });
 
 var numeroCartao = document.getElementById('numeroCartao');
@@ -21,13 +21,13 @@ function chamarFuncoes(numeroCartao,nomeTitular,CVV,Validade){
 function verificarCartao(numeroCartao,nomeTitular,CVV){
     
     if(numeroCartao.length !== 16){
-        alert("Número do cartao Inválido");
+        alert('Número do cartao Inválido');
     };
     if(nomeTitular.length === ''){
-        alert("Nome inválido")
+        alert('Nome inválido')
     };
     if(CVV < 2 || CVV > 4){
-        alert("Número inválido")
+        alert('Número inválido')
     }
 }
 
