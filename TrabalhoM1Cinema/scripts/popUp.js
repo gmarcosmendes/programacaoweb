@@ -53,3 +53,28 @@ function openModal6(){
 function closeModal6(){
     modal6.classList.remove('active')
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Adiciona eventos de clique aos botões de compra
+    document.getElementById('btnCartao').addEventListener('click', confirmPurchase);
+    document.getElementById('btnPix').addEventListener('click', confirmPurchase);
+    document.getElementById('btnBoleto').addEventListener('click', confirmPurchase);
+});
+
+function confirmPurchase() {
+    // Recupera o valor total dos assentos do armazenamento local
+    const totalAssentos = parseFloat(localStorage.getItem('totalAssentos')) || 0;
+    // Recupera o valor total dos aperitivos do armazenamento local
+    const totalAperitivos = parseFloat(localStorage.getItem('totalAperitivos')) || 0;
+    // Calcula o valor total da compra somando os valores dos assentos e aperitivos
+    const valorTotal = totalAssentos + totalAperitivos;
+
+    // Verifica se os valores foram carregados corretamente
+    if (valorTotal > 0) {
+        // Redirecionar para a página de revisão
+        window.location.href = './review.html';
+    } else {
+        // Exibe uma mensagem de erro (opcional)
+        console.error('Erro ao recuperar o valor total da compra.');
+    }
+}

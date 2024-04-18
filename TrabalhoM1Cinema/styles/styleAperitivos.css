@@ -1,0 +1,35 @@
+#pular{
+    float: right;
+    margin-right: 1%;
+}
+
+/* Adicione este estilo para ajustar o alinhamento vertical dos símbolos nos botões */
+.decrement,
+.increment {
+    display: inline-flex; /* Altera a exibição para flex para centralizar o conteúdo verticalmente */
+    align-items: center; /* Centraliza verticalmente o conteúdo dentro do botão */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro do botão */
+    width: 30px; /* Defina a largura dos botões conforme necessário */
+    height: 30px; /* Defina a altura dos botões conforme necessário */
+    background-color: #0251fc; /* Cor de fundo conforme a classe button */
+    color: white; /* Cor do texto conforme a classe button */
+    border: solid 1px black;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    margin-right: 5px; /* Adiciona um espaçamento entre os botões */
+}
+
+.decrement:hover,
+.increment:hover {
+    background-color: #023e8a; /* Cor de fundo ao passar o mouse conforme a classe button */
+}
+
+.contador {
+    display: inline-block;
+    width: 30px; /* Defina a largura do contador conforme necessário */
+    text-align: center; /* Centralizar o texto no contador */
+}
+
+#totalAperitivo{
+    margin-right: 10px;
+}

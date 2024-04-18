@@ -55,7 +55,7 @@ function updateTotal() {
     document.getElementById('totalAperitivo').textContent = 'Total dos aperitivos: R$' + totalAperitivos.toFixed(2);
 }
 
-const botaoContinuar = document.querySelector('.button');
+const botaoContinuar = document.querySelector('.fileira .button');
 
     // Adiciona evento de clique ao botão "Continuar"
     botaoContinuar.addEventListener('click', function() {

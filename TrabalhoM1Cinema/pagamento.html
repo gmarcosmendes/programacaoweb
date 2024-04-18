@@ -22,29 +22,29 @@
                 <div class="final-dados">
                     <div class="form">
                         <label class="form-label">Número do cartão</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput"
+                        <input type="int" class="form-control" id="numeroCartao"
                             placeholder="0000 0000 0000 0000">
                     </div>
                     <div class="form">
                         <label class="form-label">Nome do titular</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="JOAO MARIA">
+                        <input type="text" class="form-control" id="nomeTitular" placeholder="JOAO MARIA">
                     </div>
                 </div>
                 <div class="final-dados">
                     <div class="form">
                         <label class="form-label">Validade</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="00/00/0000">
+                        <input type="text" class="form-control" id="Validade" placeholder="00/00/0000">
                     </div>
                     <div class="form">
                         <label class="form-label">CVV</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="000">
+                        <input type="int" class="form-control" id="CVV" placeholder="000">
                     </div>
                 </div>
                 <div>
                     <img src="img/cartao-de-credito-daddos.png" alt="">
                 </div>
                 <div class="btns">
-                    <button class="btnOK" onclick="closeModal4()"> Comprar</button>
+                    <button class="btnOK" onclick="chamarFuncoes()" id="btnCartao">  Comprar</button>
                     <button class="btnClose" onclick="closeModal4()"> Cancelar</button>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                 </div>
                 <P>00020101021126330014br.gov.bcb.pix01110977964892552040000530398654040.015802BR5918CINEMA-PIRATARIA-ABERTA6006ITAJAI62070503***630460F8</P>
                 <div class="btns">
-                    <button class="btnOK" onclick="closeModal5()"> Confirmar</button>
+                    <button class="btnOK" id="btnPix"> Confirmar</button>
                     <button class="btnClose" onclick="closeModal5()"> Cancelar</button>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                 <P>40390.00007 42095.765006
                     80426.199016 1 96780000041000</P>
                 <div class="btns">
-                    <button class="btnOK" onclick="closeModal6()"> Confirmar</button>
+                    <button class="btnOK" id="btnBoleto"> Confirmar</button>
                     <button class="btnClose" onclick="closeModal6()"> Cancelar</button>
                 </div>
             </div>

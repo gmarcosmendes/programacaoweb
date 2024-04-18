@@ -60,39 +60,3 @@ button{
     cursor: pointer;
     position: relative;
 }
-
-.cinema{
-    margin: 150px;
-    margin-top: 20px;
-    padding: 15px;
-    padding-bottom: 33px;
-    border: solid black 3px;
-}
-
-.tela{
-    background-color: black;
-    width: 100%;
-    height: 60px;
-}
-
-#textTela{
-    color: white;
-    font-size: 30px;
-}
-
-.assento-card{
-    margin: 33px;
-    margin-bottom: 5px;
-    border-radius: 3px;
-}
-
-/*#imgAssento{
-    background: url(img/assentoVerde.jpg) -5px -120px no-repeat;
-    width: 25px;
-    height: 25px;
-}
-*/
-#imgAssento:hover{
-   filter:invert(10%);
-}
-
