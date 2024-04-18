@@ -60,3 +60,14 @@ button{
     cursor: pointer;
     position: relative;
 }
+
+footer{
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    padding-top: 25px;
+    margin-top: 40px;
+}
