@@ -62,16 +62,20 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function confirmPurchase() {
+    const idBotao = event.target.id;
     // Recupera o valor total dos assentos do armazenamento local
     const totalAssentos = parseFloat(localStorage.getItem('totalAssentos')) || 0;
     // Recupera o valor total dos aperitivos do armazenamento local
     const totalAperitivos = parseFloat(localStorage.getItem('totalAperitivos')) || 0;
     // Calcula o valor total da compra somando os valores dos assentos e aperitivos
     const valorTotal = totalAssentos + totalAperitivos;
-
+    
+    if(idBotao === 'btnCartao'){
+        verificarCartao();
+    }
     // Verifica se os valores foram carregados corretamente
-    if (valorTotal > 0) {
-        // Redirecionar para a página de revisão
+    else if (valorTotal > 0) {
+        
         window.location.href = './review.html';
     } else {
         // Exibe uma mensagem de erro (opcional)
