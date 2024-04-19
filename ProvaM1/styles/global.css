@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    background-color: #133C74;
+    height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+footer{
+    background-color: #293744;
+    height: 240px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    
+}
+
+li{
+    list-style-type: none;
+}
+.li-style{
+    list-style-type: disc;
+}
+ul{
+    padding: 0px;
+}
+.top-bar{
+    background-color: #133C74;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    
+}
+.img-top-bar{
+    display: flex;
+    filter: invert();
+    padding-right: 30px;
+}
+.letra-top{
+    padding-left: 10px;
+}
+
+.infos{
+    display: flex;
+    float: left;
+    padding: 10px;
+}
+.contatos{
+    float: right;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+img{
+    height: 40px;
+    color: white;
+}
+
+.infos-footer{
+    padding: 20px;
+    padding-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    margin: auto;
+}
+
+.titulo{
+    width: 100%;
+    background-color: #294A5A;
+    height: 70px;
+}
+
+.titulo-content {
+    color: white;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1px;
+}
+
+.cabecalho{
+    width: 100%;
+    background-color:  #f1f1f1;
+    height: 50px;
+}
+
+.cabecalho-content{
+    display: flex;
+    margin: auto;
+    position: relative;
+    width: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cabecalho p{
+    margin: 0;
+}
+
+#publicacao{
+    float: right;
+    margin-right: 21%;
+    
+}
+
+.container1{
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+}
+
+.container1 p{
+    color: #133C74;
+}
+
+sub{
+    font-style: italic;
+}
+
+#secom{
+    float: right;
+    font-weight: bold;
+}
+
+.noticias{
+    width: 100%;
+    justify-content: center;
+    padding-top: 80px;
+    margin-bottom: -70px;
+}
+
+.noticias-header{
+    height: 50px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 70%);
+    margin: auto;
+    width: 60%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 5px;
+}
+
+.noticias-content{
+    padding-top: 100px;
+    margin: auto;
+    width: 60%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
