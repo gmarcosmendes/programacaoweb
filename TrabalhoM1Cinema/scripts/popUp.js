@@ -56,7 +56,7 @@ function closeModal6(){
 
 document.addEventListener('DOMContentLoaded', function () {
     // Adiciona eventos de clique aos botões de compra
-   // NAO PASSAR PROXIMA PAGINA   document.getElementById('btnCartao').addEventListener('click', confirmPurchase);
+    document.getElementById('btnCartao').addEventListener('click', confirmPurchase);
     document.getElementById('btnPix').addEventListener('click', confirmPurchase);
     document.getElementById('btnBoleto').addEventListener('click', confirmPurchase);
 });
